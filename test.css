@@ -233,15 +233,17 @@ color:#A8763E;
     border-radius: 10%;
     background-color:#2f323a;
     overflow: hidden;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 70% 50%;
+    background-size: 140%;
     transition: transform .2s;
 }
 
 .cards {
-    max-width: fit-content;
+    max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 2em 0;
     gap: 4em;
 }
@@ -275,26 +277,28 @@ color:#A8763E;
 
 .card1 {
     background-image: url(pictures/car.png);
-    background-position: 73% 50%;
-    background-size: 140%;
 }
 
 .card2 {
     background-image: url(pictures/exam.png);
-    background-position: 50% 50%;
-    background-size: 140%;
 }
 
 .card3 {
     background-image: url(pictures/water.png);
-    background-position: 73% 50%;
     background-size: 120%;
 }
 
 .card4 {
     background-image: url(pictures/scrollytelling.png);
-    background-size: 140%;
-    background-position: 70% 50%;
+}
+
+.card5 {
+    background-image: url(pictures/javascript.png);
+    background-size: 160%;
+}
+
+.card2, .card5 {
+    background-position: center;
 }
 
 @media only screen and (max-width: 1150px) {
