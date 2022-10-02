@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Merriweather:wght@700&family=Source+Sans+Pro:ital@0;1&display=swap');
+body {
+    margin: 0;
+    background-color: rgb(246, 246, 246);
+}
+header {
+    width: 100%;
+    padding: 1.5em 0 0;
+    background: #bf4e30;
+    text-align: center;
+}
+.header-bottom {
+    background: #fabc3c;
+    padding: 1.3em 0em;
+    margin-bottom: 0;
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer{
+    background: #fabc3c;
+    padding: 2em 0em;
+    margin-top: 2em;
+    text-align: center;
+}
+article{
+    width: 60ch;
+    font-size: 1.1rem;
+    background: #fdeac4;
+    margin:0 0 1em 0;
+    padding: 0em 2em;
+    box-shadow: 5px 5px 3px #585858;
+}
+img {
+    position: relative;
+    right: -3em;
+    top: -2em;
+    margin-left: -4em;
+    margin-bottom: -3em;
+    float: right;
+    height: 12em;
+}
+h1{
+    letter-spacing: 0.03em;
+    font-size: 3em;
+}
+
+h1, h2, footer > p, q {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Merriweather', serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.7em;
+}
+p{
+    line-height: 1.4;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p > a, span {
+    font-style: italic;
+}
+
+p > a:focus, a:hover {
+    color: rgb(184, 1, 1);
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 14px;
+    }
+    article{
+        width: 100%;
+        margin: 0 0 2em;
+        padding: 0;
+        box-shadow: none;
+        overflow: hidden;
+    }
+    p {
+        margin: 0 2em 1em;
+    }
+    img {
+        right: -2em;
+        margin-left: -3em;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <header>
+        <div class="nav flex">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <article>
+          <h2>Do you have any thoughts on the Corona-game?</h2>
+          <p>
+            I would love to hear your experience from playing the game. Perhaps
+            you have a funny story from playing the game, or you have some ideas
+            on how to improve the game. If you have a question for me make sure
+            to add your email so I can respond to your message.
+          </p>
+        </article>
+        <form>
+          <div>
+            <label for="textfield">Share your thoughts</label>
+            <textarea
+              required
+              maxlength="500"
+              minlength="10"
+              name="test"
+              id="textfield"
+              rows="5"
+            ></textarea>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <img
+          id="big"
+          class="ntnu"
+          src="img/ntnu-logo.png"
+          alt="Logo for NTNU"
+        />
+        <img
+          id="small"
+          src="img/ntnu-logo-small.png"
+          alt="Logo for NTNU"
+          class="ntnu"
+        />
+        <div class="ntnuinfo">
+          <p>Department of Design</p>
+          <p>
+            Address:
+            <a href="https://goo.gl/maps/CFLM8p7Wyyj4kbQNA" target="_blank"
+              >Raufossvegen 40, 2821 Gjøvik</a
+            >
+          </p>
+          <p>
+            Phone number: <a class="phone" href="tel:61135400">61 13 54 00</a>
+          </p>
+        </div>
+        <div class="ntnuinfo info-right">
+          <p>Created by Trym Simensen Nerem</p>
+          <p>
+            Student from Web Development as part of a project in subject IDG1292
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
