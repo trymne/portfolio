@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Do you need a new favourite sport?</h1></header>
+    <main>
+      <div class="container">
+        <div id="sport-result" class="hidden">
+          <h2>Your new favourite is <span id="result"></span></h2>
+          <p>
+            If you want to learn more about your new favourite sport, go to
+            <a href="" id="link-result">Wikipedia</a>. I hope you will enjoy
+            this sport during the next Olympics.
+          </p>
+          <button id="restart">Try again</button>
+        </div>
+        <div id="card-container">
+          <div id="card">
+            <div class="question">
+              <h2 id="welcome">Hello</h2>
+              <p id="question">Do you prefer the summer or the winter?</p>
+            </div>
+            <p id="txt-answer1"></p>
+            <button id="answer1">Summer!</button>
+            <p id="txt-answer2"></p>
+            <button id="answer2">Winter!</button>
+          </div>
+        </div>
+        <div id="athlete" class="hidden">
+          <h2 id="name">Athlete</h2>
+          <ul>
+            <li>Sport: <span id="sport"></span></li>
+            <li>Age: <span id="age"></span></li>
+            <li>Won gold medals in <span id="gold"></span></li>
+            <li id="active"></li>
+          </ul>
+        </div>
+        <div class="funfact">
+          <h2>How fast is a speed skater?</h2>
+          <p>
+            The world record for the 10 000m is 12:30.74 (47,95km/h), but
+            exactly how fast is that? Enter any amount of minutes, and you can
+            see how far Nils Van Der Poel would get in that time.
+          </p>
+          <button id="minutes">Enter here!</button>
+          <p id="nils"></p>
+        </div>
+        <div id="list" class="funfact">
+          <h2>
+            Maybe the quiz isn't for you, perhaps you just want a list of some
+            sports?
+          </h2>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
