@@ -58,8 +58,9 @@ main.index {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 3em;
     font-family: 'Karla', sans-serif;
+    text-align: center;
 }
 
 h1.name {
@@ -70,6 +71,10 @@ h1.name {
 }
 .portfolio > h1 {
     margin-bottom: 0em;
+}
+
+.portfolio {
+    margin: 1em 2em;
 }
 
 nav {
@@ -228,8 +233,8 @@ color:#A8763E;
 
 
 .card {
-    width: 200px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     border-radius: 10%;
     background-color:#2f323a;
     overflow: hidden;
@@ -250,7 +255,7 @@ color:#A8763E;
 
 .cardtext{
     position: relative;
-    top: 280px;
+    top: 380px;
     transition: transform .4s;
     color: #F7F3E3;
     padding-left: 0.4em
@@ -266,13 +271,13 @@ color:#A8763E;
     z-index: -1;
 }
 
-.card:hover {
+.card:hover, .card:focus {
     transform: scale(1.2);
     box-shadow: 8px 8px 15px #111111
 }
 
-.card:hover .cardtext {
-    transform: translateY(-290px);
+.card:hover .cardtext, .card:focus .cardtext {
+    transform: translateY(-390px);
 }
 
 .card1 {
@@ -301,22 +306,129 @@ color:#A8763E;
     background-position: center;
 }
 
+body {
+    font-size: 1.3rem;
+}
+footer {
+    font-size: 1rem;
+}
 @media only screen and (max-width: 1150px) {
-    li > a {
-        font-size: 1.6em;
+    nav > ul > li > a {
+        font-size: 1.3em;
         width: 4em;
         padding: 0.6em;
     }
     nav > ul {
         margin-bottom: -3em;
     }
+    h1 {
+        font-size: 2em;
+    }
+    article.intro {
+        margin: 2em 1em;
+    }
 }
-
+@media only screen and (max-width: 1010px) {
+    main.index {
+        margin-right: 2em;
+        grid-template-columns: 1fr 400px;
+    }
+    main.resume {
+        display: flex;
+        align-items: unset;
+    }
+    nav > ul > li > a {
+        font-size: 1.2em;
+    }
+    nav > ul {
+        margin-bottom: -2em;
+    }
+}
 @media only screen and (max-width: 780px) {
     header {
         border-radius: 0;
     }
+    li > a {
+        font-size: 1.2em;
+    }
+    nav > ul {
+        margin-bottom: -2em;
+    }
     header > nav > ul {
         min-width: 90vw;
     }
+    .card{
+        height: 32em;
+        border-radius:  10px 10px;
+        background-position: 40% 20%;
+    }
+    .card1 {
+        background-position: 74% 20%;
+    }
+    .cardtext {
+        top: 260px;
+    }
+    .card:hover .cardtext, .card:focus .cardtext {
+        transform: translateY(0px);
+    }
+    
+    .card:hover, .card:focus {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px #111111;
+    }
+    main.index {
+        font-size: 1.1rem;
+        grid-template-columns: 1fr 330px;
+    }
 }
+
+@media only screen and (max-width: 640px) {
+    header {
+        font-size: 1.1em;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .footlink {
+        padding-left: 2rem;
+    }
+    body{
+        font-size: 1rem;
+    }
+    nav > ul > li > a{
+        font-size: 1em;
+    }
+    main.index {
+        display: flex;
+    }
+    .intro > h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
