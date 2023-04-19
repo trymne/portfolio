@@ -1,7 +1,5 @@
 export default class Card extends HTMLElement {
 
-
-    
     constructor() {
         super();
         this.attachShadow({ mode: 'open'});
@@ -10,8 +8,6 @@ export default class Card extends HTMLElement {
 
     render(){
         this.renderTitle();
-        //this.renderStyle();
-        // this.renderText();
     }
 
     renderTitle(){
