@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fffbfc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+        "h h h"
+        "l m r"
+        "f f f";
+}
+
+header {
+    grid-area: h;
+    display: flex;
+    padding-left: 5px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+main {
+    grid-area: m;
+    width: auto;
+}
+
+footer {
+    grid-area: f;
+    background-color: #222222;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+.nav {
+    background: #56b9f9;
+    height: 70px;
+    width: 60vw;
+    grid-area: h;
+    position: relative;
+    left: 20vw;
+    border-radius: 35px;
+    align-items: center;
+    box-shadow: 8px 8px 15px #111111;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.nav > ul > li {
+    display: inline;
+    width: 110px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+li > a {
+    color: black;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+#game {
+    text-decoration: none;
+    align-self:center;
+    min-width: 260px;
+}
+
+li > a:hover {
+    font-size: 180%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+img.ntnu {
+    height: 70px;
+    margin: 10px 0 0 10px;
+    display: block;
+    margin-block-end: 0rem;
+}
+
+img#small {
+    display: none;
+}
+
+.ntnuinfo {
+    margin: 2px 10px 0px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ntnuinfo > p {
+    color: #fffbfcd8;
+    margin: 5px 0 0 10px;
+}
+
+.ntnuinfo > p > a {
+    color: #fffbfcd8;
+}
+
+.info-right {
+    width: 30ch;
+    margin-right: 30px;
+}
+
+.row1 {
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 940px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro > p {
+    line-height: 1.4;
+    font-size: 1.2rem;
+    width: 42ch;
+    margin: auto;
+}
+
+.gamead {
+    max-width: 30vw;
+}
+
+.gamead > h2 {
+    width: 200px;
+    color: black;
+    text-decoration: none;
+}
+
+#coronagame {
+    height: 60%;
+    min-height: 250px;
+    position: relative;
+    left: 10px;
+}
+
+.cards {
+    gap: 50px;
+    margin: 40px 0 15px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a.home-button {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(86,185,249);
+    width: 70px;
+    height: 70px;
+    border-radius: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 15px #111111;
+}
+
+div.home-button {
+    font-size: 150%;
+}
+
+.card, card-info {
+    width: 200px;
+    height: 350px;
+    border-radius: 10%;
+    background-color: rgb(86,185,249);
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: transform .2s;
+    box-shadow: 8px 8px 15px #111111;
+}
+
+.cardtext{
+    position: relative;
+    top: 280px;
+    transition: transform .4s;
+    left: -5px;
+}
+
+.cardtext::before {
+    content: '';
+    width: 150%;
+    position: absolute;
+    height: 200%;
+    box-shadow: inset 5px 0 0 500px rgb(86,185,249);
+    z-index: -1;
+}
+
+.card:hover, card-info:hover {
+    transform: scale(1.2);
+}
+
+.card:hover .cardtext {
+    transform: translateY(-330px);
+}
+
+#vaccine{
+    background-image: url(img/covid-19-positive.svg);
+}
+
+#vaccination{
+    background-image: url(img/covid-19-vaccine.svg);
+}
+
+#corona-virus{
+    background-image: url(img/corona-world.svg);
+}
+
+#good-health {
+    background-image: url(img/good-health.svg);
+}
+
+#howto-help {
+    background-image: url(img/wash-hands.svg);
+}
+
+.card > * {
+    margin: 10px;
+}
+
+.rules {
+    width: 550px;
+    margin-bottom: 40px;
+}
+
+article > p {
+    width: 50ch;
+    margin: auto;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+ul.game {
+    display: block;
+    width: 50ch;
+    margin: auto;
+}
+
+ul.game > li, a.phone {
+    display: block;
+}
+
+.board {
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+}
+
+.game-page {
+    margin: 40px 0 30px;
+    flex-wrap: wrap;
+}
+
+#board {
+    margin: 0;
+    display: block;
+}
+
+.board > a {
+    background: rgb(86,185,249);
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    align-self: center;
+    box-shadow: 3px 3px 6px #111111;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 42px;
+}
+
+form > div {
+    background: #56b9f9;
+    max-width: 506px;
+    padding: 10px 15px 20px;
+    margin: 10px 10px;
+    border-radius: 30.5px;
+    box-shadow: 6px 6px 10px #111111;
+}
+
+label {
+    display: block;
+}
+
+button {
+    background: #56b9f9;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    max-width: 500px;
+    width: 50vw;
+}
+
+
+
+@media only screen and (max-width: 1146px) {
+    .row1 {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .ntnuinfo > p, article > p, ul.game {
+        font-size: 0.7rem;
+    }
+
+    .ntnuinfo {
+        margin: 2px 5px 0px;
+    }
+
+    li > a {
+        font-size: 118%;
+    }
+
+    img.ntnu {
+        height: 50px;
+    }
+
+    .grid {
+        grid-template-areas:
+        "h h h"
+        "m m m"
+        "f f f";
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-button {
+        position: absolute;
+    }
+    li > a:hover {
+        font-size: 118%;
+    }
+    .nav {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        height: 100px;
+        left: 0;
+        margin: 0;
+    }
+    header {
+        padding: 0;
+    }
+    .card {
+        box-shadow: none;
+    }
+    .card:hover {
+        transform: scale(1.0);
+    }
+    h1 {
+        font-size: 1.5rem;
+        width: auto;
+    }
+    .intro > p{
+        width: auto;
+        margin: 0px 8px;
+        line-height: 1.3;
+    }
+    
+    img#big {
+        display: none;
+    }
+    img#small {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    article > p, ul.game {
+    width: auto;
+    margin: 0px 10px;
+    }
+    .ntnuinfo {
+        font-size: 0.6rem;
+    }
+}
