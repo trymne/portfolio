@@ -9,9 +9,11 @@ body {
     overflow: hidden;
     margin: 0;
   }
+  /*test*/
   
   .page-1 {
     color: #ffffff;
+    background: red;
     background:#3cd;
     text-align: center;
     padding-top: 1.4rem;
